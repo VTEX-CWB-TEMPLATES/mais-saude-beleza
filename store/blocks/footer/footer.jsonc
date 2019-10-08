@@ -1,0 +1,217 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "newsletter",
+      "flex-layout.row#footer-line01",
+      "flex-layout.row#footer-line02",
+      "flex-layout.row#footer-line03"
+    ]
+  },
+
+  
+  "newsletter":{
+    "props":{
+      "label":"Assine nossa newsletter!",
+      "placeholder":"Seu email",
+      "submit":"quero receber",
+      "confirmationTitle":"Obrigado",
+      "confirmationText":"Seu email foi registrado"
+    }
+  },
+
+  // LINHA 01 DO RODAPÉ
+
+  "flex-layout.row#footer-line01":{
+    "children":[
+      "flex-layout.col#intitucionals",
+      "flex-layout.col#payments",
+      "flex-layout.col#facebook"
+      // "flex-layout.col#seals"
+    ],
+    "props":{
+      "blockClass":"footer"
+    }
+  },
+
+  // BLOCO DE INSTITUCIONAIS
+  "flex-layout.col#intitucionals":{
+    "children":[
+      "rich-text#title-intitucionals",
+      "rich-text#about",
+      "rich-text#politics",
+      "rich-text#security",
+      "rich-text#delivery"
+      // "rich-text#ask"
+    ],
+    "props":{
+      "blockClass":"links-intitucionals"
+    }
+  },
+  // LINKS INSTITUCIONAIS
+  "rich-text#title-intitucionals":{
+    "props":{
+      "text":"Institucionais",
+      "blockClass":"footer-title"
+    }
+  },  
+  "rich-text#about":{
+    "props":{
+      "text":"[Sobre a empresa](/sobre)",
+      "blockClass":"footer-links"
+    }
+  },
+  "rich-text#politics":{
+    "props":{
+      "text":"[Política e entrega](/politica-entrega)",
+      "blockClass":"footer-links"
+    }
+  },  
+  "rich-text#security":{
+    "props":{
+      "text":"[Privacidade e segurança](/politica-seguranca)",
+      "blockClass":"footer-links"
+    }
+  },  
+  "rich-text#delivery":{
+    "props":{
+      "text":"[Envios e entrega](/entrega)",
+      "blockClass":"footer-links"
+    }
+  },   
+//   "rich-text#ask":{
+//     "props":{
+//       "text":"[Perguntas frequentes](/questions)",
+//       "blockClass":"footer-links"
+//     }
+//  },
+
+ // FORMAS DE PAGAMENTO
+
+ "flex-layout.col#payments":{
+   "children":[
+     "rich-text#title-payments",
+    "accepted-payment-methods"
+   ]
+ },
+ "rich-text#title-payments":{
+  "props":{
+    "text":"Formas de pagamento",
+    "blockClass":"footer-title"
+  }   
+ },
+
+ // SELOS E SEGURANÇA
+
+ "flex-layout.col#facebook":{
+  "children":[
+   "rich-text#facebook"
+  ]
+},
+"rich-text#facebook":{
+  "props":{
+    "text": "`<iframe src='https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmaissaudeebelezacwb&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=115884571943876' width='340' height='500' style='border:none;overflow:hidden' scrolling='no' frameborder='0' allowTransparency='true' allow='encrypted-media'></iframe>`",
+    "blockClass":"likebox-facebook"
+  }
+},
+
+// CENTRAL DE ATENDIMENTO
+
+"flex-layout.row#footer-line02":{
+  "children":[
+    "rich-text#callCenter"
+  ],
+  "props":{
+    "blockClass":"callCenter"
+  }
+},
+
+"rich-text#callCenter":{
+  "props":{
+    "text": "(41) 3022-7393 | (41)98868-4301<br>Seg. à Sex. das 8:30h às 18:00h | Sábados das 9:00h às 12:00h",
+    "blockClass":"callCenter"
+  }
+},
+
+// COPYRIGHT
+
+"flex-layout.row#footer-line03":{
+  "children":[
+    "flex-layout.col#col-copyright",
+    "flex-layout.col#col-seals"
+  ]
+},
+
+"flex-layout.col#col-copyright":{
+  "children":[
+    "rich-text#copyright"    
+  ],
+  "props":{ 
+    "width":"80%"
+  }
+},
+
+"flex-layout.col#col-seals":{
+  "children":[
+    "flex-layout.row#row-seals"
+  ],
+  "props":{ 
+    "width":"20%"
+  }
+},
+
+"flex-layout.row#row-seals":{
+  "children":[
+    "flex-layout.col#vtex",
+    "flex-layout.col#lets"
+  ],
+  "props":{ 
+    "blockClass":"content-seals"
+  }
+},
+
+"flex-layout.col#vtex":{
+  "children":[
+    "rich-text#seal-vtex"    
+  ],
+  "props":{
+    "width":"auto"
+  }
+},
+"flex-layout.col#lets":{
+  "children":[
+    "rich-text#seal-letsEncrypt"        
+  ],
+  "props":{
+    "width":"auto"
+  }
+},
+
+
+"rich-text#copyright":{
+  "props":{
+    "text": "Responsável Técnico:<br>Farmacêutico Dr. Fábio Francisco Baptista de Queiroz, CRF-PR 12996<br>Mais Saúde e Beleza - CNPJ 21.389.557/0001-36<br>Rua: Castro n° 17 Água Verde Curitiba-Pr<br>80620-300",
+    "blockClass":"text-copyright"
+  }
+},
+
+"rich-text#seal-vtex":{
+  "props":{
+    "text": "[![VTEX](https://maissaudeebeleza.vteximg.com.br/assets/vtex.file-manager-graphql/images/logo-vtex___830e58ec0765cb68308e49b0103a45d2.webp)](https://vtex.com)",
+    "blockClass":"sealVtex"
+  }
+},
+"rich-text#seal-letsEncrypt":{
+  "props":{
+    "text": "![Let's Encrypt](https://maissaudeebeleza.vteximg.com.br/assets/vtex.file-manager-graphql/images/le-logo-standard___58a4a7e8eb69b8bdbea5d60e52f4155d.png)",
+    "blockClass":"sealLets"
+  }
+}
+
+
+}

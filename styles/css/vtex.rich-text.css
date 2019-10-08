@@ -1,0 +1,261 @@
+.container--deals {
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+}
+
+.container--deals .paragraph {
+  margin: 0;
+}
+
+.container--link {
+  justify-content: center;
+}
+
+.container--question {
+  justify-content: center;
+}
+
+.container--question .paragraph {
+  text-align: center;
+  max-width: 540px;
+  margin: 0 16px;
+  padding-top: 120px;
+  color: #03034E;
+}
+
+.container--question .strong {
+  font-size: 32px;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.container--link .paragraph {
+  text-align: center;
+  max-width: 540px;
+  padding-top: 36px;
+  padding-bottom: 84px;
+  color: #03034E;
+}
+
+.container--link .strong {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container--link .link {
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 300;
+  color: #03034E;
+}
+
+.container--title {
+  color: #03034E;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.container--padding-1{
+  padding:0 2em 0 0;
+}
+
+.container .paragraph img{
+  vertical-align: middle;
+}
+
+.container--alert{justify-content: center;}
+
+.container--alert .paragraph{
+  color: #004085;
+  background-color: #cce5ff;
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid #b8daff;
+  border-radius: .25rem;
+  font-size:12px;  
+}
+
+.container--text-direitos .paragraph{
+  clear: both;
+  position: relative;
+  font-size: 12px;
+  color: #888888;
+  text-align: justify;  
+}
+
+.container--text-direitosReservados{
+  font-size:12px;
+  text-align: center;
+  color:#888;
+  justify-content: center;
+}
+
+.container--title-default{
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.container--title-default .paragraph{
+  font-size: 23px;
+  border: 1px solid #35a53a;
+  text-transform: uppercase;
+  color: #35a53a;
+  background: #fff;
+  font-weight: normal;
+  position: relative;
+  font-weight: 700;
+  padding: 0 20px;
+  width: auto;
+  display: inline-flex;
+  margin: 20px 0;
+  padding: 5px 20px;  
+}
+
+.container--infoPageContent .paragraph{
+  text-align: justify;
+}
+
+.container--infoPageContent .paragraph .strong{
+  color: #8a8a8a;
+  font-size:1rem;
+}
+
+.container--encontreNos img{
+  display:block;
+  justify-content: center;
+  margin: 0 auto;
+}
+.container--encontreNos .paragraph{text-align: center;}
+.container--encontreNos .paragraph .strong{
+  color:#5f84f2;
+  font-size:1em;
+  display: block;
+  text-align: center;
+  margin: 0 auto;   
+}
+
+
+
+.container--title-section .paragraph{color:#474747;font-size:.9rem;text-transform: uppercase;font-weight: bold;}
+.container--title-section-block p, .container--title-section-block ul, .container--title-section-block li{height:0;opacity: 0;transition: cubic-bezier(0.1, 2.68, 1,-0.23);margin:0;overflow: hidden;}
+.container--title-section-block h3{
+  font-size: 1rem;
+  font-weight: normal;
+  background: #f2f2f2;
+  padding: 0 10px;
+  border-radius: 5px;
+  color: #424242;
+  line-height: 45px;  
+  position: relative;
+  margin: 0 0 12px;
+}
+.container--title-section-block h3:after{
+  content:"";
+  background: url(https://mundialfarma.vteximg.com.br/assets/vtex.file-manager-graphql/images/icon-arrow___12af2199c2c7e5e9b990bbea144571cd.png) no-repeat center center scroll transparent;
+  width:20px;
+  height: 20px;
+  position:absolute;
+  right: 10px;
+  top: 12px;
+  background-size: 16px;
+}
+.container--title-section-block h3:hover{
+  background: #6aa837;
+  color:#fff;
+}
+
+.container--title-section-block h3:hover::after{
+  transform: rotate(180deg);
+  filter: invert(1);
+}
+.container--title-section-block h3:hover + p, .container--title-section-block h3:hover + ul, .container--title-section-block h3:hover + p + ul{opacity: 1;height: auto;font-size:.8rem;border:1px solid #dedede;border-radius:5px;padding:10px;margin-bottom: 10px;}
+
+.container--footer-title .paragraph{
+  color: #b3163a;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.container--footer-links .paragraph{
+  line-height: 1;
+  padding:0;
+  margin: 3px 0;
+}
+.container--footer-links .paragraph a{
+  color: #333;
+  padding: 3px 0;
+  margin: 10px 0;
+  display:block;
+  text-decoration: none;
+}
+
+.container--footer-links .paragraph a:hover{text-decoration: underline;}
+.container--callCenter{justify-content: center;text-align: center;}
+.container--callCenter .paragraph{color:#118629;font-weight:bold;}
+.container--sealVtex{width:160px;}
+.container--sealLets{width:120px;}
+.container--sealLets a, .container--sealVtex a{display:block;vertical-align: middle;}
+.container--likebox-facebook{justify-content: flex-end}
+
+@media only screen and (min-width: 640px) {
+  .container--question .strong {
+    font-size: 40px;
+    line-height: 3rem;
+  }
+
+  .container--about {
+    max-width: 85%;
+  }
+
+  .container--title {
+    color: #03034E;
+    font-size: 40px;
+    font-weight: 700;
+    max-width: 60%;
+  }
+
+  .container--title .paragraph {
+    line-height: 1.3em;
+  }
+  .container--infoPageContent > div {width:100%;}
+  .container--infoPageContent .heading-level-6{position: relative;margin:10px 0;}
+  .container--infoPageContent .heading-level-6:before{
+    border-top:1px solid #ccc;
+    content:"";
+    width:100%;
+    height:1px;   
+    display: inline-flex; 
+    position:absolute;
+    top:11px;
+    left:0;
+  }
+  .container--infoPageContent .heading-level-6 .strong{
+    color:#8a8a8a;
+    background:#fff;
+    padding-right:10px; 
+    position: relative;
+  }   
+  .container--information-headerText .paragraph{
+    font-size: .9rem;
+    line-height: 1;
+    margin: .6em 1em .6em 0;
+    color: #444;
+  }
+  .container--link-blog{
+    padding: 0 2em;
+    background: #dedede;    
+  }
+  .container--link-blog .paragraph{margin:0;}
+  .container--link-blog .paragraph a{
+    color: #004a02;
+    text-decoration: none;
+    font-weight: bold;  
+    display: block;
+    padding: 5px;  
+  }
+
+}

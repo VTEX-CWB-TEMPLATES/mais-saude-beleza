@@ -1,0 +1,78 @@
+.element{
+    padding-bottom: 0;
+}
+
+.priceContainer{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.buyButton button{
+    width:96%;
+    border-radius: 0;
+    transition: 0.2s;
+    border:0;
+}
+.buyButton button:disabled{
+    background: #aaa;
+}
+.buyButton button:disabled div{
+    color: transparent;
+    position: relative;
+    padding: 0;
+}
+.buyButton button:disabled div:before{
+    content:"CONSULTE-NOS";
+    color:#fff;
+    font-size:1rem;
+    position: absolute;
+}
+.buyButton button div{
+    white-space: initial;
+}
+
+
+.imageNormal{
+    padding:1em;
+    box-sizing: border-box;
+}
+
+.nameContainer{
+    text-align: center;
+    padding-top:0;
+    justify-content: center;
+    padding-bottom: .5em;
+}
+
+.containerInline{
+    font-size: 12px;
+}
+.containerInline .element{
+    border:0;
+    border-bottom:1px dashed #eee;
+}
+.containerInline .imageContainer img{
+    padding: 0;
+}
+
+.quantityStepperContainer{
+    display: inline-flex;
+    margin-right: 10px;        
+}
+.quantityStepperContainer + div{
+    display:inline-flex;
+}
+
+
+@media only screen and (min-width: 640px){
+    .priceContainer{
+        padding-top: 1rem;
+    }
+    .nameContainer{
+        justify-content: left;
+        text-align: left;
+        max-height: 82px;
+        padding:0 1.5em 1.5em;        
+    }
+    
+}

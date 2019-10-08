@@ -1,0 +1,11 @@
+.dotsContainer{
+    display:none;
+}
+
+@media only screen and (min-width: 640px) {
+ 
+    .dotsContainer{
+        display:inline-block;
+    }    
+    
+}

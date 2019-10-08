@@ -1,0 +1,218 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "header-row#contact",
+      "header-row#logobar",
+      "header-row#menu"
+    ]
+  },
+  
+  "header-row#contact": {
+    "children": [
+      "rich-text#televendas",
+      "rich-text#telefone",
+      "header-spacer",
+      "rich-text#blog"
+    ],
+    "props":{
+      "blockClass":"information-bar"      
+    }
+  },
+  "header-row#logobar": {
+    "children": [
+      "logo#desktop",
+      "header-spacer",
+      "search-bar",
+      "header-spacer",
+      "login",
+      "header-spacer",
+      "minicart"
+    ],
+    "props":{
+      "blockClass":"row-logo"
+    }
+  },
+
+"search-bar":{
+  "props":{
+    "iconClasses":"icon-default"
+  }
+},
+
+  "rich-text#televendas": {
+    "props": {
+      "text": "![Central de atendimento](https://maissaudeebeleza.vteximg.com.br/assets/vtex.file-manager-graphql/images/ico-phone___fa6de0472c642f0220740b760ed10f45.png) Central de atendimento: (41) 3022-7393",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "font": "t-small",
+      "blockClass":"information-headerText"
+    }
+  },
+ 
+  "rich-text#telefone": {
+    "props": {
+      "text": "![whatsApp](https://maissaudeebeleza.vteximg.com.br/assets/vtex.file-manager-graphql/images/ico-whatsapp___f69abac5672caa34c778b1413f69afee.png) Whatsapp: (41) 98868-4301",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "font": "t-small",
+      "blockClass":"information-headerText"
+    }
+  }, 
+
+  "rich-text#blog": {
+    "props": {
+      "text": "[Blog](http://blog.maissaudeebeleza.com.br/?target=_blank)",
+      "textAlignment": "right",
+      "textPosition": "right",
+      "font": "t-small",
+      "blockClass":"link-blog"
+    }
+  }, 
+
+  
+
+  "logo#desktop": {
+    "props": {
+      "title": "Mais Saúde e Beleza",
+      "href": "/",
+      "url": "https://maissaudeebeleza.vteximg.com.br/assets/vtex.file-manager-graphql/images/logo-maisSaudeBeleza___e8fe27697b5580d463ccd27220976d2c.png",
+      "width": "230"
+    }
+  },
+
+  "minicart": {
+    "blocks": [
+      "product-summary"
+    ],
+    "props": {
+      "type": "popup",
+      "showRemoveButton": true,
+      "showDiscount": true,
+      "showSku": true,
+      "labelMiniCartEmpty": "Carrinho vazio",
+      "labelButtonFinishShopping": "Ir para o checkout",
+      "iconLabel":"CARRINHO",
+      "showTotalItemsQty":true,
+      "enableQuantitySelector": true,
+      "maxQuantity": 10,
+      "labelClasses": "label-minicart tst-minicart",
+      "iconClasses":"bg-action-primary white-90 miniCart-icon"
+    }
+  },
+  
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "LOGIN",
+      "accessCodeTitle": "Receber código",
+      "emailPraceholder": "E-mail",
+      "passwordPlaceholder": "Senha",
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+
+  "header-row#menu": {
+    "children": [
+      "category-menu"
+    ],
+    "props": {
+      "inverted":true,
+      "blockClass":"content-menu",
+      "sticky": true      
+    }
+  },
+
+  "category-menu":{
+    "props": {
+      "blockClass":"menu-default",
+      "showPromotionCategory": false,
+      "showGiftCategory": false,
+      "showAllDepartments": true,
+      "showSubcategories": true,
+      "menuDisposition": "center"
+    }    
+  },
+
+  
+
+// MOBILE
+
+
+  "header-layout.mobile": {
+    "children": [
+      "header-row#1-mobile",
+      "header-row#search-bar"
+    ]
+  },
+  "header-row#1-mobile": {
+    "children": [
+      "drawer",
+      "logo#mobile",
+      "header-spacer",
+      "login",
+      "minicart"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header-mobile"
+    }
+  },
+  "drawer": {
+    "children": [
+      // "menu#drawer"
+      "category-menu#mobile"
+    ]
+  },
+  "category-menu#mobile":{
+    "props": {
+      "blockClass":"menu-mobile",
+      "showPromotionCategory": false,
+      "showGiftCategory": false,
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "center"
+    }    
+  },  
+
+
+  // "menu#drawer": {
+  //   "children": [
+  //     "menu-item#medicamentos",
+  //     "menu-item#oncologicos",
+  //     "menu-item#fertilidade",
+  //     "menu-item#materiais"
+  //   ],
+  //   "props": {
+  //     "orientation": "vertical"
+  //   }
+  // },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Mais Saúde e Beleza",
+      "href": "/",
+      "url": "https://maissaudeebeleza.vteximg.com.br/assets/vtex.file-manager-graphql/images/logo-maisSaudeBeleza___e8fe27697b5580d463ccd27220976d2c.png",
+      "width": "120"
+    }
+  },
+  // Header 2
+  "header-row#search-bar":{
+    "children":[
+      "search-bar"      
+    ]
+  }
+
+
+
+}

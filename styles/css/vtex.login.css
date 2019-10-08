@@ -1,0 +1,17 @@
+.container{background:transparent;}
+.optionsListItem button{text-transform: inherit;}
+
+@media only screen and (min-width: 640px) {
+.label{
+    background: transparent;
+    color:#5d071b;
+    display:block;
+    text-indent: inherit;
+    width: auto;
+    height: auto;
+    text-transform: capitalize;
+}
+
+.container svg{color:#5d071b;}    
+
+}

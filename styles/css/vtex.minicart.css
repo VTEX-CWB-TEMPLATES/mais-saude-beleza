@@ -1,0 +1,90 @@
+.label{
+    font-weight: bold;
+    color:#195a1b;
+    display: none;
+}
+
+.container svg{
+    background: #fff;
+    color: #8a8a8a;
+    height: 20px;
+    width: 20px;
+}
+
+.contentDiscount *{
+    font-size:1em !important;
+    color: green !important;
+    font-weight: normal !important;
+}
+
+.contentSmall *{
+    font-size:13px !important;
+    text-align: left !important;
+}
+
+@media only screen and (min-width: 80em) {
+    .label{
+        display: block;
+        position: relative;
+    }
+    .label:before{
+        content: "(0) itens";
+        position: absolute;
+        font-size: 12px;
+        color: #8a8a8a;
+        bottom: -18px;
+        left: 21px;
+        text-transform: lowercase;
+        z-index: 0;
+        font-weight: normal;
+    }
+    .badge{
+        top: inherit;
+        bottom: -1.8rem;
+        right: -4.5rem;
+        background: #fff;
+        color: #5d071b;
+        width: auto;
+        z-index: 2;
+        padding: 0 .5rem;
+    }
+
+    .badge:after{
+        content:"itens";
+        padding-left: .3em;
+    }
+
+    .miniCart-icon span{
+        background: #fff;
+    }
+
+    .container{
+        height: 50px;
+        position: relative;
+        padding-left: 40px;
+    }
+    .container:before{
+        content: "";
+        position: absolute;
+        top: 1px;
+        left: 0px;
+        width: 50px;
+        height: 50px;
+        background: url(https://maissaudeebeleza.vteximg.com.br/assets/vtex.file-manager-graphql/images/ico-miniCart___ff30007….png) no-repeat center scroll #2fb44b;
+        background-size: 25px;
+    }
+    .container button{
+        margin-top: -15px;
+    }
+    .container button:hover{
+        background: transparent;
+    }
+
+    .container svg{display:none;}
+    .contentSmall{
+        border: 0;
+    }
+    .imageContainer{
+        max-width:20%;
+    }
+}

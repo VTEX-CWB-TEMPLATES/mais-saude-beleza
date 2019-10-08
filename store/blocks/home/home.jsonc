@@ -1,0 +1,169 @@
+{
+  "store.home": {
+    "blocks": [
+      "carousel#home",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      // "flex-layout.row#deals",
+      "shelf#showcase01",
+      "shelf#showcase02"
+      // "shelf.tabbed"
+      // "info-card#home",
+      // "newsletter"
+    ]
+  },
+
+  "carousel#home": {
+    "props": {
+      "autoplay": false,
+      "banners": [
+        {
+          "image": "https://maissaudeebeleza.vteximg.com.br/assets/vtex.file-manager-graphql/images/banner02___47e3ea594e573a6d464e8c01c15b4c1e.jpg",
+          "mobileImage": "https://maissaudeebeleza.vteximg.com.br/assets/vtex.file-manager-graphql/images/banner02___47e3ea594e573a6d464e8c01c15b4c1e.jpg",
+          "description": "Banner 001"
+        },
+        {
+          "image": "https://maissaudeebeleza.vteximg.com.br/assets/vtex.file-manager-graphql/images/banner01___ab352adbbac6e2d028f694ede7f9ea9e.jpg",
+          "mobileImage": "https://maissaudeebeleza.vteximg.com.br/assets/vtex.file-manager-graphql/images/banner01___ab352adbbac6e2d028f694ede7f9ea9e.jpg",
+          "description": "Banner 002"
+        }
+      ],
+      "height": 450,
+      "showArrows": true,
+      "showDots": true
+    }
+  },
+
+  // Showcase 01
+  "shelf#showcase01":{
+    "blocks":[
+      "product-summary.shelf"
+    ],
+    "props":{
+      "orderBy": "OrderByTopSaleDESC",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 5,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "dots":false,
+        "titleText": "Medicamentos Especiais"
+      }      
+    }
+  },
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-summary-space",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ]
+  },
+  "product-summary-image":{
+    "props":{
+      "showBadge":false
+    }
+  },
+  "product-summary-buy-button":{
+    "props":{
+      "buyButtonText":"Comprar"
+    }
+  },
+  "product-summary-price":{
+    "props":{
+      "showLabels":false
+    }
+  },
+  // Showcase 02
+  "shelf#showcase02":{
+    "blocks":[
+      "product-summary.shelf"
+    ],
+    "props":{
+      "orderBy": "OrderByTopSaleDESC",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 5,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "dots":false,
+        "titleText": "Os mais procurados"
+      }      
+    }
+  },
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-summary-space",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ]
+  },
+  "product-summary-image":{
+    "props":{
+      "showBadge":false
+    }
+  },
+  "product-summary-buy-button":{
+    "props":{
+      "buyButtonText":"Comprar"
+    }
+  },
+  "product-summary-price":{
+    "props":{
+      "showLabels":false
+    }
+  }  
+  // Showcase 02
+  // "shelf.tabbed": {
+  //   "blocks": [
+  //     "product-summary"
+  //   ],
+  //   "props": {
+  //     "isEnabled": true,
+  //     "tabs": [
+  //         {
+  //           "id": 1,
+  //           "__editorItemTitle": "Difusores"
+  //         },
+  //         {
+  //           "id": 2,
+  //           "__editorItemTitle": "Ofertas"
+  //         },
+  //         {
+  //           "id": 3,
+  //           "__editorItemTitle": "Suplementos"
+  //         }
+  //       ],
+  //     "shelf": {
+  //       "orderBy": "OrderByTopSaleDESC",
+  //       "productList": {
+  //         "maxItems": 4,
+  //         "itemsPerPage": 4,
+  //         "scroll": "BY_PAGE",
+  //         "arrows": false,
+  //         "showTitle": false,
+  //         "summary": {
+  //           "displayBuyButton": "displayButtonAlways",
+  //           "isOneClickBuy": true,
+  //           "showBadge": true,
+  //           "badgeText": "OFF",
+  //           "buyButtonText": "Comprar",
+  //           "showCollections": false,
+  //           "showListPrice": true,
+  //           "showLabels": false,
+  //           "showInstallments": false,
+  //           "showSavings": false,
+  //           "name": {
+  //             "showBrandName": false,
+  //             "showSku": false,
+  //             "showProductReference": false
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+}
