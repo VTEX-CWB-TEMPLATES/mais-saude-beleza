@@ -39,7 +39,7 @@
     "blocks":[
       "product-summary.shelf"
     ],
-    "props":{
+    "props":{     
       "orderBy": "OrderByTopSaleDESC",
       "productList": {
         "maxItems": 10,

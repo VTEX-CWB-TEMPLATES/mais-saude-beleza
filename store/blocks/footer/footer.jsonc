@@ -7,13 +7,19 @@
   },
   "footer-layout.desktop": {
     "children": [
+      "rich-text#whatsapp",
       "newsletter",
       "flex-layout.row#footer-line01",
       "flex-layout.row#footer-line02",
       "flex-layout.row#footer-line03"
     ]
   },
-
+  "rich-text#whatsapp":{
+    "props":{
+      "text": "[whatsApp](https://api.whatsapp.com?target=_blank/send?phone=5541988684301&text=&source=&data=)",
+      "blockClass":"whatsapp"
+    }
+  },
   
   "newsletter":{
     "props":{
