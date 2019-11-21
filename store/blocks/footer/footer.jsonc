@@ -102,8 +102,13 @@
  "flex-layout.col#payments":{
    "children":[
      "rich-text#title-payments",
-    "accepted-payment-methods"
+    "image#accepted-payment"
    ]
+ },
+ "image#accepted-payment":{
+  "props":{
+    "src":"https://maissaudeebeleza.vteximg.com.br/assets/vtex.file-manager-graphql/images/formas-de-pagamento___09846eaa755600c809b3befc937eae67.png"
+  }
  },
  "rich-text#title-payments":{
   "props":{

@@ -3,6 +3,8 @@
   padding: 14px 0px;
 }
 
+.flexColChild{height:auto !important;}
+
 .flexRow--deals  .stretchChildrenWidth {
   align-items: center;
   vertical-align: middle;
