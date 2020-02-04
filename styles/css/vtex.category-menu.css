@@ -1,5 +1,7 @@
 .container{display: flex;}
-.container ul{overflow: inherit;}
+.container ul{    
+    overflow: visible;
+    height: 100%;}
 .itemContainer{
     width:100%;
     border-bottom:1px dashed #eee;
