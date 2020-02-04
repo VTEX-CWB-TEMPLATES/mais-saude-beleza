@@ -35,7 +35,8 @@
     "vtex.product-identifier": "0.x",
     "vtex.breadcrumb": "1.x",
     "vtex.sandbox": "0.x",
-    "vtex.category-menu": "2.x"
+    "vtex.category-menu": "2.x",
+    "vtex.order-placed": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
